@@ -33,7 +33,7 @@ function love.load()
 
     score = 0
 
-    Player = SpaceShip
+    Player = SpaceShip()
 
     gameState = 'start'
 
