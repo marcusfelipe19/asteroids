@@ -10,6 +10,8 @@ Window_Height = 720
 Virtual_Width = 432
 Virtual_Height = 243
 
+Player = SpaceShip()
+
 
 function love.load()
     love.graphics.setDefaultFilter('nearest', 'nearest')
@@ -32,8 +34,6 @@ function love.load()
     })
 
     score = 0
-
-    Player = SpaceShip()
 
     gameState = 'start'
 
