@@ -6,7 +6,9 @@ function SpaceShip:init()
     self.height = self.image:getHeight()
 
     self.x = Virtual_Width / 2 - (self.width / 2)
-    self.y = Virtual_Height / 2- (self.height / 2)
+    self.y = Virtual_Height / 2 - (self.height / 2)
+
+    self.dy = 0
 end
 
 function SpaceShip:update(dt)
@@ -15,5 +17,5 @@ function SpaceShip:update(dt)
 end
 
 function SpaceShip:render()
-    love.graphics.draw(self.x, self.y)
+    love.graphics.draw(self.image, self.x, self.y)
 end
