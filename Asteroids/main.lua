@@ -44,7 +44,13 @@ function love.resize(w,h)
 end
 
 function love.update(dt)
-    --Falta esta parte
+
+
+    if love.keyboard.isDown('right') then
+        Player.orientation = Player.orientation + Player.rotationspeed * dt
+    elseif love.keyboard.isDown('left') then
+        Player.orientation = Player.orientation - Player.rotationspeed * dt
+    end
 end
 
 function love.keypressed(key)
